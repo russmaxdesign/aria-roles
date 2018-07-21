@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ARIA Role Categories</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container-wide">
+    <h1>ARIA Role Categories</h1>
+    <p><a href="https://github.com/russmaxdesign/aria-roles">Github Page</a></p>
+    <p>When <a href="https://www.w3.org/TR/wai-aria-1.0/">WAI ARIA 1.0</a> became a W3C Recommendation in March 2014, there were four categories for roles.</p>
+    <ol>
+      <li><a href="roles#Abstract_roles">Abstract Roles</a></li>
+      <li><a href="roles#widget_roles">Widget Roles and Widget Containers</a></li>
+      <li><a href="roles#document_structure_roles">Document Structure Roles</a></li>
+      <li><a href="roles#landmark_roles">Landmark Roles</a></li>
+    </ol>
+    <p>When <a href="https://www.w3.org/TR/wai-aria-1.1/">WAI ARIA 1.1</a> became a W3C Recommendation in 14 December 2017, some additional categories were introduced and the categories then became:</p>
+    <ol>
+      <li><a href="#Abstract_roles">Abstract Roles</a></li>
+      <li><a href="#widget_roles">Widget Roles and Widget Containers</a></li>
+      <li><a href="#document_structure_roles">Document Structure Roles</a></li>
+      <li><a href="#landmark_roles">Landmark Roles</a></li>
+      <li><a href="#live_region_roles">Live Region Roles</a></li>
+      <li><a href="#window_roles">Window Roles</a></li>
+    </ol>
+    <p><a href="https://www.w3.org/TR/wai-aria-1.2/">ARIA 1.2</a> became a Working Draft in July 2018 and these categories have remained the same.</p>
+    <p>With the introduction of these new categories, some existing 1.0 roles were moved to a new category.</p>
+    <p>The chart below shows all WAI ARIA roles including notes on when they <span class="change">changed category</span>, or where <span class="new">newly introduced</span>.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>ARIA role</th>
+          <th>ARIA 1.0 Category</th>
+          <th>ARIA 1.1 Category</th>
+          <th>ARIA 1.2 Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#alert">alert</a></code></th>
+          <td>Widget</td>
+          <td class="change">Live Region <span class="hidden">- Changed in 1.1</span></td>
+          <td>Live Region</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#alertdialog">alertdialog</a></code></th>
+          <td>Widget</td>
+          <td class="change">Window <span class="hidden">- Changed in 1.1</span></td>
+          <td>Window</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#application">application</a></code></th>
+          <td>Landmark</td>
+          <td class="change">Document <span class="hidden">- Changed in 1.1</span></td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#article">article</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#banner">banner</a></code></th>
+          <td>Landmark</td>
+          <td>Landmark</td>
+          <td>Landmark</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#blockquote">blockquote</a></code></th>
+          <td class="na">N/A</td>
+          <td class="na">N/A</td>
+          <td class="new">Document <span class="hidden">- Added in 1.2</span></td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#button">button</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#caption">caption</a></code></th>
+          <td class="na">N/A</td>
+          <td class="na">N/A</td>
+          <td class="new">Document <span class="hidden">- Added in 1.2</span></td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#cell">cell</a></code></th>
+          <td class="na">N/A</td>
+          <td class="new">Document <span class="hidden">- Added in 1.1</span></td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#checkbox">checkbox</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#columnheader">columnheader</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#combobox">combobox</a></code></th>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#command">command</a></code></th>
+          <td>Abstract</td>
+          <td>Abstract</td>
+          <td>Abstract</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#complementary">complementary</a></code></th>
+          <td>Landmark</td>
+          <td>Landmark</td>
+          <td>Landmark</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#composite">composite</a></code></th>
+          <td>Abstract</td>
+          <td>Abstract</td>
+          <td>Abstract</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#contentinfo">contentinfo</a></code></th>
+          <td>Landmark</td>
+          <td>Landmark</td>
+          <td>Landmark</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#definition">definition</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#dialog">dialog</a></code></th>
+          <td>Widget</td>
+          <td class="change">Window <span class="hidden">- Changed in 1.1</span></td>
+          <td>Window</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#directory">directory</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#document">document</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#feed">feed</a></code></th>
+          <td class="na">N/A</td>
+          <td class="new">Document <span class="hidden">- Added in 1.1</span></td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#figure">figure</a></code></th>
+          <td class="na">N/A</td>
+          <td class="new">Document <span class="hidden">- Added in 1.1</span></td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#form">form</a></code></th>
+          <td>Landmark</td>
+          <td>Landmark</td>
+          <td>Landmark</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#grid">grid</a></code></th>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#gridcell">gridcell</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#group">group</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#heading">heading</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#img">img</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#input">input</a></code></th>
+          <td>Abstract</td>
+          <td>Abstract</td>
+          <td>Abstract</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#landmark">landmark</a></code></th>
+          <td>Abstract</td>
+          <td>Abstract</td>
+          <td>Abstract</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#link">link</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#list">list</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#listbox">listbox</a></code></th>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#listitem">listitem</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#log">log</a></code></th>
+          <td>Widget</td>
+          <td class="change">Live Region <span class="hidden">- Changed in 1.1</span></td>
+          <td>Live Region</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#main">main</a></code></th>
+          <td>Landmark</td>
+          <td>Landmark</td>
+          <td>Landmark</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#marquee">marquee</a></code></th>
+          <td>Widget</td>
+          <td class="change">Live Region <span class="hidden">- Changed in 1.1</span></td>
+          <td>Live Region</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#math">math</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#menu">menu</a></code></th>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#menubar">menubar</a></code></th>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#menuitem">menuitem</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#menuitemcheckbox">menuitemcheckbox</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#menuitemradio">menuitemradio</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#navigation">navigation</a></code></th>
+          <td>Landmark</td>
+          <td>Landmark</td>
+          <td>Landmark</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#none">none</a></code></th>
+          <td class="na">N/A</td>
+          <td class="new">Document <span class="hidden">- Added in 1.1</span></td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#note">note</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#option">option</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#paragraph">paragraph</a></code></th>
+          <td class="na">N/A</td>
+          <td class="na">N/A</td>
+          <td class="new">Document <span class="hidden">- Added in 1.2</span></td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#presentation">presentation</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#progressbar">progressbar</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#radio">radio</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#radiogroup">radiogroup</a></code></th>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#range">range</a></code></th>
+          <td>Abstract</td>
+          <td>Abstract</td>
+          <td>Abstract</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#region">region</a></code></th>
+          <td>Document</td>
+          <td>Landmark</td>
+          <td>Landmark</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#roletype">roletype</a></code></th>
+          <td>Abstract</td>
+          <td>Abstract</td>
+          <td>Abstract</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#row">row</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#rowgroup">rowgroup</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#rowheader">rowheader</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#scrollbar">scrollbar</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#search">search</a></code></th>
+          <td>Landmark</td>
+          <td>Landmark</td>
+          <td>Landmark</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#searchbox">searchbox</a></code></th>
+          <td class="na">N/A</td>
+          <td class="new">Widget <span class="hidden">- Added in 1.1</span></td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#section">section</a></code></th>
+          <td>Abstract</td>
+          <td>Abstract</td>
+          <td>Abstract</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#sectionhead">sectionhead</a></code></th>
+          <td>Abstract</td>
+          <td>Abstract</td>
+          <td>Abstract</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#select">select</a></code></th>
+          <td>Abstract</td>
+          <td>Abstract</td>
+          <td>Abstract</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#separator">separator</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#slider">slider</a></code></th>
+          <td class="na">N/A</td>
+          <td class="new">Widget <span class="hidden">- Added in 1.1</span></td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#spinbutton">spinbutton</a></code></th>
+          <td class="na">N/A</td>
+          <td class="new">2. Widge <span class="hidden">- Added in 1.1</span></td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#status">status</a></code></th>
+          <td>Widget</td>
+          <td class="change">Live Region <span class="hidden">- Changed in 1.1</span></td>
+          <td>Live Region</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#structure">structure</a></code></th>
+          <td>Abstract</td>
+          <td>Abstract</td>
+          <td>Abstract</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#switch">switch</a></code></th>
+          <td class="na">N/A</td>
+          <td class="new">2. Widge <span class="hidden">- Added in 1.1</span></td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#tab">tab</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#table">table</a></code></th>
+          <td class="na">N/A</td>
+          <td class="new">Document <span class="hidden">- Added in 1.1</span></td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#tablist">tablist</a></code></th>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#tabpanel">tabpanel</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#term">term</a></code></th>
+          <td class="na">N/A</td>
+          <td class="new">Document <span class="hidden">- Added in 1.1</span></td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#textbox">textbox</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#timer">timer</a></code></th>
+          <td>Widget</td>
+          <td class="change">Live Region <span class="hidden">- Changed in 1.1</span></td>
+          <td>Live Region</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#toolbar">toolbar</a></code></th>
+          <td>Document</td>
+          <td>Document</td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#tooltip">tooltip</a></code></th>
+          <td>Widget</td>
+          <td class="change">Document <span class="hidden">- Changed in 1.1</span></td>
+          <td>Document</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#tree">tree</a></code></th>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#treegrid">treegrid</a></code></th>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+          <td>Widget Container</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#treeitem">treeitem</a></code></th>
+          <td>Widget</td>
+          <td>Widget</td>
+          <td>Widget</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/#widget">widget</a></code></th>
+          <td>Abstract</td>
+          <td>Abstract</td>
+          <td>Abstract</td>
+        </tr>
+        <tr>
+          <th><code><a href="https://www.w3.org/TR/wai-aria-1.2/window">Window</a></code></th>
+          <td>Abstract</td>
+          <td>Abstract</td>
+          <td>Abstract</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><a href="https://github.com/russmaxdesign/aria-roles">Github Page</a></p>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+.container-wide {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+tbody th {
+  border-top: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+th,
+td {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+.na {
+  color: #777;
+  background: #eee;
+}
+
+.change {
+  background: yellow;
+}
+
+.new {
+  background: lime;
+}
