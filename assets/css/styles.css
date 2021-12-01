@@ -8,3 +8,12 @@
 	position: relative;
 	top: -.5em;
 }
+
+h2 {
+    margin: 2em 0 0.5em;
+}
+
+code {
+	font-family: consolas, monospace;
+	color: green;
+}
